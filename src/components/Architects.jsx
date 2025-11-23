@@ -1,5 +1,8 @@
 import "./Architects.css";
 import { motion } from "framer-motion";
+import arch1 from '../assets/arch-1.JPG'
+import arch2 from '../assets/arch-2.JPG'
+import arch3 from '../assets/arch-3.JPG'
 
 const architects = [
   {
@@ -8,7 +11,7 @@ const architects = [
     role: "Lead Structural Architect",
     exp: "20+ ish tajribasi",
     bio: "Ko‘p qavatli turar-joy va sanoat inshootlarida yuzlab loyihalar muallifi. Amaliy konstruktiv yechimlar bo‘yicha yetakchi mutaxassis.",
-    photo: "/src/assets/arch-1.jpg",
+    photo: arch1,
   },
   {
     id: 2,
@@ -16,7 +19,7 @@ const architects = [
     role: "Concept & Planning Architect",
     exp: "15+ years experience",
     bio: "Master reja, landshaft va ichki makonlarni bir butun tizim sifatida ko‘rish bo‘yicha katta tajribaga ega. Shaharsozlik yondashuvini o‘rgatadi.",
-    photo: "/src/assets/arch-2.jpg",
+    photo: arch2,
   },
   {
     id: 3,
@@ -24,7 +27,7 @@ const architects = [
     role: "Construction Technology Expert",
     exp: "18+ years experience",
     bio: "Qurilish texnologiyalari, materiallar va obyektni noldan ekspluatatsiyaga topshirishgacha bo‘lgan jarayon bo‘yicha chuqur bilimga ega.",
-    photo: "/src/assets/arch-3.jpg",
+    photo: arch3,
   },
 ];
 

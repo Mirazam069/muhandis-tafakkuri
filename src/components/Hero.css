@@ -10,7 +10,7 @@
 
 /* Static, scrollda harakat qilmaydigan fon */
 .hero-bg {
-  position: fixed;
+  position: sticky;
   inset: 0;
   background-image: url("/src/assets/bg-dark.jpg"); /* o'zingni rasm yo'ling */
   background-size: cover;
