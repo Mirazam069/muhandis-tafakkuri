@@ -1,17 +1,18 @@
 body {
+  margin: 0;
   background-image: url("./assets/bg-dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-color: #000;
+  background-color: black;
   font-family: 'Merriweather_120pt';
 }
+
 @media (max-width: 768px) {
   body {
-    background-size: contain;   /* kesmaydi, lekin yonlarda bo'sh joy bo'lishi mumkin */
-    background-position: top center;
-    background-color: #000;     /* bo'sh joylar qora bo'lsin */
+    background-attachment: scroll;
+    background-position: center top;
   }
 }
 
