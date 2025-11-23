@@ -15,17 +15,30 @@ function App() {
 
     <div>
        <FloatingLines
-        enabledWaves={["top", "middle", "bottom"]}
-        lineCount={[10, 15, 20]}
-        lineDistance={[8, 6, 4]}
-        animationSpeed={0}      // 0 qilsa – TO‘LIQ STATIC
-        interactive={false}     // sichqoncha ta'sirini o‘chirib qo‘yamiz
-        parallax={false}        // scroll bo'yicha siljish bo‘lmaydi
-        bendRadius={5.0}
-        bendStrength={-0.5}
-        mixBlendMode="normal"   // 'screen' emas, oddiy fon bo‘lsin
-        linesGradient={["#050505", "#111111", "#222222"]} // iliq qorong'i gradient (xohlasang o'zgartirasan)
-      />
+  enabledWaves={["top", "middle", "bottom"]}
+  lineCount={[10, 15, 20]}
+  lineDistance={[8, 6, 4]}
+
+  // 🔥 QIMIRLASHI UCHUN
+  animationSpeed={0.8}     // 0.5–1 oralig‘i yaxshi
+  interactive={true}       // sichqonchaga reaksiya bersin desang
+  parallax={true}          // scroll/kursor bo‘yicha ozgina siljisin
+
+  // 🎨 RANGSIZ (oq/kulrang) CHIZIQLAR
+  linesGradient={[
+    "#444444",
+    "#777777",
+    "#777777",
+    "#777777"
+  ]}
+
+  bendRadius={5.0}
+  bendStrength={-0.5}
+  parallaxStrength={0.2}
+  mixBlendMode="screen"
+  style={{ opacity: 0.5 }}     // yoki "normal" – juda silliq bo‘lishini xohlasang
+/>
+
 
       <div>
         <Marquee/>
