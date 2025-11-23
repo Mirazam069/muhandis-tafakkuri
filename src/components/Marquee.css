@@ -1,0 +1,49 @@
+.marquee-section {
+  width: 100%;
+  background: #9aff4f;
+  padding: 12px 0;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.marquee-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Track o'ngdan chapga harakatlanadi */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-text {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #05070a;
+  white-space: nowrap;
+}
+
+/* Animatsiya: o'ngdan chapga */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobil uchun biroz kichikroq */
+@media (max-width: 600px) {
+  .marquee-text {
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    padding-right: 5px;
+  }
+}
+

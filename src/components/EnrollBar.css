@@ -1,0 +1,65 @@
+/* Pastda to'liq ekranni egallovchi wrapper */
+.enroll-full {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  z-index: 9999;
+  padding: 0 16px; /* ichkariga ozgina bo'sh joy */
+  pointer-events: none; /* faqat ichki box klik bo'lsin */
+}
+body{
+    font-family: 'Merriweather_120pt';
+}
+/* Animatsiya bo'ladigan box */
+.enroll-full-box {
+  pointer-events: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* box-shadow kerak emas deding, shuning uchun yo'q */
+
+  padding: 10px 16px;
+}
+
+/* Ichkaridagi tugma (to'liq boxni bosiladigan qilamiz) */
+.enroll-full-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Merriweather_120pt';
+}
+
+/* Telegram icon */
+.enroll-full-icon {
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .enroll-full {
+    bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .enroll-full-box {
+    border-radius: 14px;
+    padding: 9px 12px;
+  }
+}
