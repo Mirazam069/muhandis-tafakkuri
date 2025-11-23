@@ -7,6 +7,13 @@ body {
   background-color: #000;
   font-family: 'Merriweather_120pt';
 }
+@media (max-width: 768px) {
+  body {
+    background-size: contain;   /* kesmaydi, lekin yonlarda bo'sh joy bo'lishi mumkin */
+    background-position: top center;
+    background-color: #000;     /* bo'sh joylar qora bo'lsin */
+  }
+}
 
 
 *{
@@ -21,6 +28,3 @@ body {
   font-weight: 400;
 }
 
-body{
-  
-}
