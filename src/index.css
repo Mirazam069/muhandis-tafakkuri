@@ -1,0 +1,26 @@
+body {
+  background-image: url("./assets/bg-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+  font-family: 'Merriweather_120pt';
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Merriweather_120pt';
+  src: url('./assets/static/Merriweather_120pt-Regular.ttf');
+  font-weight: 400;
+}
+
+body{
+  
+}

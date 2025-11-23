@@ -13,6 +13,7 @@ function App() {
   return (
 
     <div>
+      <div className="page-bg"></div>
       <Marquee/>
       <Hero/>
       <Architects/>

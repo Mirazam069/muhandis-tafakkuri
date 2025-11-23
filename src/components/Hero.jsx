@@ -1,32 +1,21 @@
-// src/components/Hero.jsx
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bgImage from "../assets/bg-dark.jpg"; // rasmni shu papkaga qo'y
+import "../components/Hero.css";
 
-import "./Hero.css";
-
-const WORDS = ["Tajriba", "Fikrlash", "Bilim", "Amaliyot"];
+const WORDS = ["Tajriba", "Fikrlash", "Bilim", "Amaliyot"]; // <-- SHU YO'Q EDI
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
-  // Har 2 soniyada so'zni almashtirish
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % WORDS.length);
     }, 2000);
-
     return () => clearInterval(timer);
   }, []);
 
   return (
     <section className="hero">
-      {/* Fixed background layer */}
-      <div
-        className="hero-bg"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      />
-
       <div className="hero-content">
         <h1 className="hero-title">
           Muhandis Tafakkuri –
