@@ -1,20 +1,9 @@
 body {
   margin: 0;
-  background-image: url("./assets/bg-dark.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: black;
+  background-color: #000;
   font-family: 'Merriweather_120pt';
 }
 
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-    background-position: center top;
-  }
-}
 
 
 *{

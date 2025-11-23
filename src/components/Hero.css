@@ -59,5 +59,11 @@
   }
 }
 
-
+@media (max-width: 768px) {
+  body {
+    background-size: contain;   /* kesmaydi, lekin yonlarda bo'sh joy bo'lishi mumkin */
+    background-position: top center;
+    background-color: #000;     /* bo'sh joylar qora bo'lsin */
+  }
+}
 
