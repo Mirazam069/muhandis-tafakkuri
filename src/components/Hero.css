@@ -14,20 +14,25 @@
   inset: 0;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* COVER O'RNIGA STABIL O'LCHAM – ZOOM QILMAYDI */
-  background-size: 130% auto;
-
+  background-size: cover; /* FULL EKRAN */
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   pointer-events: none;
+  background-size: contain;
 }
 
-/* Telefonda fon yanada barqaror ko'rinishi uchun */
+/* iPhone / mobil uchun barqaror variant */
 @media (max-width: 768px) {
   .hero-bg {
-    background-size: 200% auto;
+    position: absolute; /* fixed o‘rniga */
+    background-size: cover; /* to‘liq ekranni egallasin */
+    width: 100%;
+    height: 100%;
+    background-size: contain;
   }
 }
+
 
 .hero-content {
   max-width: 1200px;
