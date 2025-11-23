@@ -1,13 +1,16 @@
+// src/components/Hero.jsx
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import bgImage from "../assets/bg-dark.jpg"; // rasmni shu papkaga qo'y
+
 import "./Hero.css";
 
-const WORDS = ["Tajriba", "Fikrlash", "Bilim", "Tajriba"];
+const WORDS = ["Tajriba", "Fikrlash", "Bilim", "Amaliyot"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
-  // Har 1 soniyada so'zni almashtirish
+  // Har 2 soniyada so'zni almashtirish
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % WORDS.length);
@@ -18,14 +21,17 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      {/* Static background layer */}
-      <div className="hero-bg" />
+      {/* Fixed background layer */}
+      <div
+        className="hero-bg"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      />
 
       <div className="hero-content">
         <h1 className="hero-title">
-          Muhandis Tafakkuri -
+          Muhandis Tafakkuri –
           <br />
-          Arxitektura va qurilishdagi {" "}
+          Arxitektura va qurilishdagi{" "}
           <span className="hero-dynamic-wrapper">
             <AnimatePresence mode="wait">
               <motion.span
@@ -39,7 +45,7 @@ export default function Hero() {
                 {WORDS[index]}
               </motion.span>
             </AnimatePresence>
-          </span>
+          </span>{" "}
           ni oshiring.
         </h1>
       </div>

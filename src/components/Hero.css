@@ -1,22 +1,32 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  padding: 10px 40px 10px;
+  padding: 80px 40px 40px; /* tepada navbar uchun joy */
   color: #ffffff;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
 
-/* Static, scrollda harakat qilmaydigan fon */
+/* Fixed, scrollda joyidan qimirlamaydigan fon */
 .hero-bg {
   position: fixed;
   inset: 0;
-  background-image: url("/src/assets/bg-dark.jpg"); /* o'zingni rasm yo'ling */
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /* COVER O'RNIGA STABIL O'LCHAM – ZOOM QILMAYDI */
+  background-size: 130% auto;
+
   z-index: -1;
+  pointer-events: none;
+}
+
+/* Telefonda fon yanada barqaror ko'rinishi uchun */
+@media (max-width: 768px) {
+  .hero-bg {
+    background-size: 200% auto;
+  }
 }
 
 .hero-content {
@@ -33,7 +43,7 @@
   max-width: 800px;
 }
 
-/* Dinamik so'z + underline */
+/* Dinamik so'z + chiziq */
 .hero-dynamic-wrapper {
   position: relative;
   display: inline-block;
@@ -47,7 +57,7 @@
   bottom: 0;
   width: 100%;
   height: 5px;
-  background: #fff; /* pastdagi kulrang chiziq */
+  background: #ffffff;
 }
 
 .hero-dynamic-word {
@@ -55,19 +65,17 @@
   color: #9aff4f;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE – MOBILE */
 @media (max-width: 768px) {
-
+  .hero {
+    padding: 40px 20px 0px;
+    align-items: flex-start;
+    margin-bottom: -30px;
+  }
 
   .hero-title {
-    font-size: 36px;
-  }
-  .hero-bg {
-    background-size: 250% auto; /* zoom bo‘lmaydi */
-    background-attachment: fixed;
-  }
-
-  .hero {
-    min-height: 100vh; /* toolbar sakrashini kamaytiradi */
+    font-size: 34px;
+    line-height: 1.18;
+    max-width: 100%;
   }
 }
