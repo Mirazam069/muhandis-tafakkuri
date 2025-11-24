@@ -8,6 +8,8 @@ export default function Marquee() {
         <div className="marquee-track">
           <span className="marquee-text"> Muhandis tafakkuri • Muhandis tafakkuri • Muhandis tafakkuri • </span>
           <span className="marquee-text"> Muhandis tafakkuri • Muhandis tafakkuri • Muhandis tafakkuri • </span>
+          <span className="marquee-text"> Muhandis tafakkuri • Muhandis tafakkuri • Muhandis tafakkuri • </span>
+          <span className="marquee-text"> Muhandis tafakkuri • Muhandis tafakkuri • Muhandis tafakkuri • </span>
         </div>
       </div>
     </section>
