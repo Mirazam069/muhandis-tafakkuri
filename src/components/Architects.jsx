@@ -45,9 +45,9 @@ export default function Architects() {
     <section className="architects" id="architects">
       <div className="architects-inner">
         <div className="architects-header">
-          <p className="architects-kicker">THE MINDS BEHIND MUHANDIS TAFAKKURI</p>
+          <p className="architects-kicker">43 YILLIK SOF BILIMLAR</p>
           <h2 className="architects-title">
-            3 arxitektor — birlashtirilgan <span>muhandis tafakkur</span>
+            3 arxitektorning umumiy bilimlari
           </h2>
           <p className="architects-subtitle">
             Kursda siz nazariya emas, balki yillar davomida sinovdan o‘tgan real

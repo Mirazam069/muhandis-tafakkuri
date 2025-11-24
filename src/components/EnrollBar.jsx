@@ -2,6 +2,7 @@
 import "./EnrollBar.css";
 import { motion } from "framer-motion";
 import { FaTelegramPlane } from "react-icons/fa";
+import logo from "../assets/logo.png"; // <-- LOGO IMPORT
 
 export default function EnrollBar() {
   return (
@@ -24,12 +25,14 @@ export default function EnrollBar() {
         <button
           className="enroll-full-btn"
           onClick={() => {
-            window.open("https://t.me/username", "_blank"); // shu yerga o'zingning Telegram linkni qo'y
-          }}
-          type="button"
-        >
-          <span>Kursga yozilish</span>
+            window.open("https://t.me/username", "_blank");
+          }}type="button">
+          <img src={logo} alt="Logo" className="enroll-logo" />
+          <div className="enrollAllDiv">
+            <span>Kursga yozilish</span>
           <FaTelegramPlane className="enroll-full-icon" />
+          </div>
+          
         </button>
       </motion.div>
     </motion.div>

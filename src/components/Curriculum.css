@@ -55,7 +55,12 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, #9aff4f, #4c6fff);
+  background: linear-gradient(90deg,
+  #3b82f6 0%,
+  #6366f1 25%,
+  #8b5cf6 55%,
+  #ec4899 100%
+);
   opacity: 0.4;
 }
 

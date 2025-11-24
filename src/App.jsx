@@ -19,25 +19,25 @@ function App() {
   lineCount={[10, 15, 20]}
   lineDistance={[8, 6, 4]}
 
-  // 🔥 QIMIRLASHI UCHUN
-  animationSpeed={0.8}     // 0.5–1 oralig‘i yaxshi
-  interactive={true}       // sichqonchaga reaksiya bersin desang
-  parallax={true}          // scroll/kursor bo‘yicha ozgina siljisin
-
-  // 🎨 RANGSIZ (oq/kulrang) CHIZIQLAR
-  linesGradient={[
-    "#444444",
-    "#777777",
-    "#777777",
-    "#777777"
-  ]}
-
+  animationSpeed={0.8}      // 3 juda tez, 0.6–1 oraliq yoqimli
+  interactive={true}
+  parallax={true}
   bendRadius={5.0}
   bendStrength={-0.5}
-  parallaxStrength={0.2}
+  parallaxStrength={0.25}
+
+  // 🔥 ReactBits’ga o‘xshash ko‘k–binafsha–pushti gradient
+  linesGradient={[
+    "#3b82f6", // yorqin ko‘k
+    "#6366f1", // indigo
+    "#8b5cf6", // binafsha
+    "#ec4899"  // neon pushti
+  ]}
+
   mixBlendMode="screen"
-  style={{ opacity: 0.5 }}     // yoki "normal" – juda silliq bo‘lishini xohlasang
+  // style={{ opacity: 0.8 }}   // biroz shaffof, lekin yorqin
 />
+
 
 
       <div>

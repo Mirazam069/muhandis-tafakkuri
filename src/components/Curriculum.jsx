@@ -35,10 +35,8 @@ export default function Curriculum() {
       <div className="learn-inner">
         {/* Chap tomoni – sarlavha */}
         <div className="learn-header">
-          <p className="learn-kicker">INSIDE THE COURSE</p>
           <h2 className="learn-title">
-            Bu kursda siz{" "}
-            <span>chizmadan tashqarida o‘ylashni</span> o‘rganasiz.
+            Bu kursda siz nimalarni o'rganasiz?
           </h2>
           <p className="learn-subtitle">
             Maqsad – formulani yodlatish emas, balki real obyektlar ortida

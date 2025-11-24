@@ -32,7 +32,7 @@
 }
 
 .architects-title span {
-  color: #9aff4f; /* hero’dagi neon yashilga mos */
+  color: #3b82f6; /* hero’dagi neon yashilga mos */
 }
 
 .architects-subtitle {
@@ -71,7 +71,12 @@
 .arch-avatar-wrap {
   padding: 3px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #9aff4f, #546cff);
+  background: linear-gradient(90deg,
+  #3b82f6 0%,
+  #6366f1 25%,
+  #8b5cf6 55%,
+  #ec4899 100%
+);
 }
 
 .arch-avatar {
@@ -104,7 +109,7 @@
 
 .arch-exp {
   font-size: 12px;
-  color: #9aff4f;
+  color: #3b82f6;
 }
 
 .arch-bio {
