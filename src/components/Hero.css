@@ -1,13 +1,14 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  padding: 80px 40px 60px;
+  padding: 0px 40px 60px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   z-index: 1;
+  margin-top: -50px;
 }
 
 /* HECH QANDAY .hero-bg ENDIIII YO‘Q, UNI O‘CHIRAMIZ */
@@ -51,6 +52,7 @@
   .hero {
     padding:60px 20px 0px;
     align-items: flex-start;
+    margin-top: 0;
   }
 
   .hero-title {

@@ -55,7 +55,7 @@ export default function Curriculum() {
       <div className="learn-inner">
         {/* Chap tomoni – sarlavha */}
         <div className="learn-header">
-          <span className="learn-badge">2 oy intensiv</span>
+          <span className="learn-badge">2 oylik intensiv</span>
 
           <h2 className="learn-title">
             Ushbu{" "}

@@ -5,7 +5,9 @@ import Hero from './components/Hero'
 import ForWho from "./components/ForWho";
 import Architects from './components/Architects'
 import Curriculum from './components/Curriculum'
+import Pricing from "./components/Pricing";
 import FAQ from './components/FAQ'
+import LastCall from './components/LastCall'
 import EnrollBar from './components/EnrollBar'
 import Marquee from './components/Marquee'
 import FloatingLines from "./components/FloatingLines";
@@ -47,7 +49,9 @@ function App() {
         <ForWho/>
         <Architects/>
         <Curriculum/>
+        <Pricing /> 
         <FAQ/>
+        <LastCall/>
         <EnrollBar/>
         </div>
       

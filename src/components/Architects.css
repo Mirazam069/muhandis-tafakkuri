@@ -2,8 +2,6 @@
   position: relative;
   padding: 80px 40px 90px;
   color: #ffffff;
-  /* Hero’dagi dark fon ustiga biroz gradient qatlam */
-  /* background: radial-gradient(circle at top, rgba(8, 12, 20, 0.9), rgba(2, 4, 8, 0.98)); */
 }
 
 .architects-inner {
@@ -18,7 +16,7 @@
 }
 
 .architects-kicker {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   opacity: 0.65;
@@ -26,17 +24,17 @@
 }
 
 .architects-title {
-  font-size: 32px;
+  font-size: 32px; /* katta title */
   line-height: 1.2;
   margin-bottom: 14px;
 }
 
 .architects-title span {
-  color: #3b82f6; /* hero’dagi neon yashilga mos */
+  color: #3b82f6;
 }
 
 .architects-subtitle {
-  font-size: 14px;
+  font-size: 17px; /* oddiy text */
   line-height: 1.7;
   opacity: 0.8;
 }
@@ -44,13 +42,12 @@
 /* GRID */
 .architects-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* mobil: 1 ustun */
   gap: 24px;
 }
 
 /* CARD */
 .arch-card {
-  /* background: rgba(4, 6, 12, 0.9); */
   backdrop-filter: blur(20px);
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -71,24 +68,19 @@
 .arch-avatar-wrap {
   padding: 3px;
   border-radius: 999px;
-  background: linear-gradient(90deg,
-  #3b82f6 0%,
-  #6366f1 25%,
-  #8b5cf6 55%,
-  #ec4899 100%
-);
+  /* Endi rangli gradient emas, faqat bitta rang */
+  background: #3b82f6;
 }
 
 .arch-avatar {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 999px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 2px solid rgba(2, 4, 8, 0.95);
 }
-
 
 /* TEXTS */
 .arch-meta {
@@ -98,22 +90,22 @@
 }
 
 .arch-name {
-  font-size: 18px;
+  font-size: 21px; /* kichik title */
   font-weight: 600;
 }
 
 .arch-role {
-  font-size: 13px;
+  font-size: 17px;
   opacity: 0.85;
 }
 
 .arch-exp {
-  font-size: 12px;
+  font-size: 17px;
   color: #3b82f6;
 }
 
 .arch-bio {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.6;
   opacity: 0.9;
   margin-top: 4px;
@@ -125,12 +117,10 @@
     padding: 100px 40px 110px;
   }
 
-  .architects-title {
-    font-size: 40px;
-  }
-
+  /* ❗ Endi 2 ta cardga mos 2 ustun */
   .architects-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
   }
 
   .arch-card {
@@ -138,9 +128,10 @@
   }
 }
 
+/* Mobil hacklaringni saqladik, agar kerak bo'lsa keyin alohida tozalaymiz */
 @media (max-width: 600px) {
   .architects {
-    padding: 0px 20px 0px;
+    padding: 240px 20px 0px;
     margin-top: -250px;
   }
 }

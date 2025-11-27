@@ -1,0 +1,158 @@
+/* SECTION WRAPPER */
+.lc {
+  position: relative;
+  padding: 80px 40px 90px;
+  color: #ffffff;
+  margin-bottom: 90px;
+}
+
+.lc-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.lc-header {
+  max-width: 720px;
+}
+
+.lc-title {
+  font-size: 32px; /* katta title */
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.lc-title span {
+  color: #3b82f6;
+}
+
+.lc-subtitle {
+  font-size: 17px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* FACTS ROW */
+.lc-facts {
+  margin-top: 28px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lc-fact {
+  display: flex;
+  gap: 10px;
+  padding: 14px 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  backdrop-filter: blur(14px);
+}
+
+.lc-fact-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #3b82f6;
+}
+
+.lc-fact-label {
+  font-size: 21px; /* kichik title */
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.lc-fact-text {
+  font-size: 17px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* STRIP (BOTTOM BAR) */
+.lc-strip {
+  margin-top: 8px;
+  padding: 14px 18px;
+  border-radius: 18px;
+
+  border: 1px solid #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.lc-strip-left {
+  max-width: 520px;
+}
+
+.lc-strip-main {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.lc-strip-main span {
+  color: #3b82f6;
+}
+
+.lc-strip-sub {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* PHONES */
+.lc-strip-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lc-phone-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lc-phone-icon {
+  font-size: 18px;
+  color: #3b82f6;
+}
+
+.lc-phone {
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.lc-phone:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .lc-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .lc-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lc-strip-phones {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .lc {
+    padding: 70px 20px 80px;
+  }
+}

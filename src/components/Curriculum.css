@@ -23,21 +23,10 @@
   align-items: center;
   justify-content: center;
   padding: 4px 12px;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   border-radius: 999px;
-  background: radial-gradient(
-      circle at top left,
-      rgba(59, 130, 246, 0.55),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(236, 72, 153, 0.45),
-      transparent 60%
-    ),
-    rgba(15, 23, 42, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.7);
   margin-bottom: 14px;
   opacity: 0.9;
@@ -96,17 +85,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 14px;
-  background: radial-gradient(
-      circle at top left,
-      rgba(59, 130, 246, 0.18),
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(236, 72, 153, 0.16),
-      transparent 55%
-    ),
-    rgba(6, 11, 25, 0.82);
 }
 
 /* Dot + id */

@@ -6,27 +6,27 @@ const people = [
   {
     tag: "Talabalar",
     title: "Arxitektura yo‘nalishida o‘qiyotganlar",
-    text: "Universitetda o‘qiyotgan, ammo konstruktor fikrlashini haqiqiy obyektlar misolida ko‘rmoqchi bo‘lgan talabalar.",
+    text: "Universitetda o‘qiyotgan, lekin konstruktiv fikrlashni real obyektlar misolida ko‘rishni istaydigan talabalar.",
   },
   {
     tag: "Junior mutaxassislar",
     title: "Arxitektor va interyer dizaynerlar",
-    text: "Allaqachon AutoCAD / Revit / 3ds Max bilan ishlaydigan, lekin konstruktiv qarorlarni tushunishni chuqurlashtirmoqchi bo‘lganlar.",
+    text: "AutoCAD, Revit yoki 3ds Max bilan ishlaydigan, lekin yuklanishlar va konstruksiyalar mantiqini chuqurlashtirmoqchi bo‘lganlar.",
   },
   {
-    tag: "Karyera qidirayotganlar",
-    title: "Freelance va studiya yo‘lini tanlayotganlar",
-    text: "Portfolio yig‘ib, yirik studiyalar yoki xorijiy mijozlar bilan ishlashni maqsad qilgan yosh mutaxassislar.",
+    tag: "Karyera izlayotganlar",
+    title: "Studiya yoki freelancer bo‘lishni xohlaganlar",
+    text: "Portfolio yig‘ib, yirik studiyalar yoki chet el mijozlari bilan ishlashni maqsad qilgan yosh mutaxassislar.",
   },
   {
     tag: "Qurilish sohasi",
-    title: "Loyiha, smeta va texnik nazoratga qiziqqanlar",
-    text: "Qurilish kompaniyalarida, pudratchi yoki texnik nazoratchi sifatida ishlashni rejalashtirayotganlar.",
+    title: "Qurilish kompaniyalarida ishlamoqchilar",
+    text: "Loyiha, smeta, texnik nazorat yoki qurilish menejmenti yo‘nalishida mustahkam asosga ega bo‘lishni istaganlar.",
   },
 ];
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 18 },
+  hidden: { opacity: 0, y: 20 },
   show: (i) => ({
     opacity: 1,
     y: 0,
@@ -40,18 +40,12 @@ export default function ForWho() {
       <div className="forwho-inner">
         {/* Chap blok – sarlavha + izoh */}
         <div className="forwho-header">
-          <p className="forwho-kicker">Kurs kimlar uchun?</p>
+          <span className="forwho-badge">Kurs kimlar uchun?</span>
+
           <h2 className="forwho-title">
-            Bu dastur{" "}
-            <span>“chizmani chiroyli qilish” emas, fikrlashni o‘rgatish</span>{" "}
-            uchun tuzilgan.
+            “Muhandis tafakkuri” kursi{" "}
+            <span>qurilishga jiddiy qaraydiganlar</span> uchun yaratilgan.
           </h2>
-          <p className="forwho-text">
-            Agar siz chizmoqlar ortida qanday xavfsizlik zanjiri, yuklanish
-            sxemasi va konstruktiv mantiq borligini tushunishni istasangiz —
-            bu kurs aynan siz uchun. Darajangiz junior bo‘lsa ham, 2–3 yil
-            tajribangiz bo‘lsa ham qatnashishingiz mumkin.
-          </p>
         </div>
 
         {/* O‘ng blok – kartochkalar */}

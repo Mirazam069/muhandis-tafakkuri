@@ -15,9 +15,9 @@ const architects = [
   },
   {
     id: 3,
-    name: "Javlon Akhmedov",
+    name: "ISMOIL",
     role: "Construction Technology Expert",
-    exp: "18+ years experience",
+    exp: "10+ years experience",
     bio: "Qurilish texnologiyalari, materiallar va obyektni noldan ekspluatatsiyaga topshirishgacha bo‘lgan jarayon bo‘yicha chuqur bilimga ega.",
     photo: arch3,
   },
@@ -37,7 +37,6 @@ export default function Architects() {
     <section className="architects" id="architects">
       <div className="architects-inner">
         <div className="architects-header">
-          <p className="architects-kicker">43 YILLIK SOF BILIMLAR</p>
           <h2 className="architects-title">
             3 arxitektorning umumiy bilimlari
           </h2>

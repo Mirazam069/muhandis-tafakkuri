@@ -1,6 +1,7 @@
+/* SECTION WRAPPER */
 .forwho {
   position: relative;
-  padding: 90px 40px 100px;
+  padding: 80px 40px 90px;
   color: #ffffff;
 }
 
@@ -13,45 +14,42 @@
   align-items: flex-start;
 }
 
-/* Chap blok */
+/* LEFT SIDE – TEXTS */
 .forwho-header {
   max-width: 520px;
 }
 
-.forwho-kicker {
-  font-size: 12px;
+.forwho-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  opacity: 0.7;
-  margin-bottom: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  color: #e5e7eb;
+  margin-bottom: 14px;
 }
 
 .forwho-title {
-  font-size: 32px;
+  font-size: 32px; /* katta title */
   line-height: 1.25;
   margin-bottom: 16px;
 }
 
 .forwho-title span {
-  background: linear-gradient(
-    90deg,
-    #3b82f6 0%,
-    #6366f1 25%,
-    #8b5cf6 55%,
-    #ec4899 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #3b82f6; /* asosiy aksent rang */
 }
 
 .forwho-text {
-  font-size: 14px;
+  font-size: 17px; /* oddiy matn */
   line-height: 1.7;
   opacity: 0.85;
 }
 
-/* Kartochkalar */
+/* RIGHT SIDE – CARDS */
 .forwho-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -62,34 +60,35 @@
   position: relative;
   padding: 18px 18px 20px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.35);
   backdrop-filter: blur(18px);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
 }
 
+/* Small label */
 .forwho-tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
   font-size: 11px;
-  border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  background: rgba(15, 23, 42, 0.9);
-  border: 1px solid rgba(148, 163, 184, 0.7);
+  border-radius: 999px;
+  border: 1px solid #3b82f6;
+  color: #e5e7eb;
   margin-bottom: 10px;
-  opacity: 0.9;
 }
 
+/* Card title + text */
 .forwho-card-title {
-  font-size: 16px;
+  font-size: 21px; /* kichik title */
   font-weight: 600;
   margin-bottom: 6px;
 }
 
 .forwho-card-text {
-  font-size: 13px;
+  font-size: 17px; /* oddiy matn */
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -97,11 +96,7 @@
 /* RESPONSIVE */
 @media (min-width: 768px) {
   .forwho {
-    padding: 110px 40px 120px;
-  }
-
-  .forwho-title {
-    font-size: 40px;
+    padding: 100px 40px 110px;
   }
 }
 
@@ -118,7 +113,8 @@
 
 @media (max-width: 640px) {
   .forwho {
-    padding: 70px 20px 80px;
+    padding: 0px 20px 80px;
+    margin-top: -100px;
   }
 
   .forwho-grid {
