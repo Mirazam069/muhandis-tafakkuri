@@ -1,6 +1,10 @@
 .hero {
   position: relative;
+  /* 1) Avval oddiy fallback */
   min-height: 100vh;
+  /* 2) Mobil uchun sakramaydigan birlik */
+  min-height: 100svh;
+
   padding: 0px 40px 60px;
   color: #fff;
   display: flex;
@@ -10,8 +14,6 @@
   z-index: 1;
   margin-top: -50px;
 }
-
-/* HECH QANDAY .hero-bg ENDIIII YO‘Q, UNI O‘CHIRAMIZ */
 
 .hero-content {
   width: 100%;
@@ -50,7 +52,7 @@
 /* MOBILE */
 @media (max-width: 768px) {
   .hero {
-    padding:60px 20px 0px;
+    padding: 60px 20px 0px;
     align-items: flex-start;
     margin-top: 0;
   }
@@ -60,12 +62,3 @@
     line-height: 1.18;
   }
 }
-
-@media (max-width: 768px) {
-  body {
-    background-size: contain;   /* kesmaydi, lekin yonlarda bo'sh joy bo'lishi mumkin */
-    background-position: top center;
-    background-color: #000;     /* bo'sh joylar qora bo'lsin */
-  }
-}
-
