@@ -1,26 +1,32 @@
-body {
-  margin: 0;
-  background-color: #000;
-  font-family: 'Merriweather_120pt';
-}
-
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Yangi shrift – DMSans */
 @font-face {
-  font-family: 'Merriweather_120pt';
-  src: url('./assets/static/Merriweather_120pt-Regular.ttf');
+  font-family: "DMSans";
+  src: url("../public/fonts/DMSans-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
+/* Agar bold, medium versiyalari bo'lsa, yana 2–3 ta @font-face qo‘shib ketasiz */
 
+/* Global font */
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: "DMSans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
 
-  /* #3b82f6 0%,
-  #6366f1 25%,
-  #8b5cf6 55%,
-  #ec4899 100% */
+/* Form elementlar ham shu fontni olsin */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}

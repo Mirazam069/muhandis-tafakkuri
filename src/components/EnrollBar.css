@@ -43,7 +43,8 @@ body{
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Merriweather_120pt';
+    font-family: "DMSans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 .enrollAllDiv{
   gap: 10px;
