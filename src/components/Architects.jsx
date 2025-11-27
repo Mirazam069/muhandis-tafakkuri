@@ -14,20 +14,6 @@ const architects = [
     photo: arch1,
   },
   {
-    id: 2,
-    name: "Madina Rasulova",
-    role: "Concept & Planning Architect",
-    exp: "15+ years experience",
-    bio:`1998 yil toshkent arxitektura qurilish oligohining arxitektura fakultetini tamomlagan
-1999 yildan 2005 yilga qadar  Tashgiprogor loyihalash institutida yetakchi arxitektor lavozimida ishlab kelgan.
-2005 yildan millimetr atch group arxitektura va dizayn studiyasini tashkil qilib hozirga davom rahbarlik qilib kelmoqda.
-2022 yildan hozirga kunga qadar Ihome build qurilish kompaniyasini boshqarib keladi
-
-
-Dubayda Jumaira palm da villa loyihasi, dubayda shayx zeid shox ko'chasida 7 qavatlik mehmonhona majmuasi, rossiya, qozogiston hamda boshqa yutlarda kopgina jamoat hamda turar-joy binolari muallifi`,
-    photo: arch2,
-  },
-  {
     id: 3,
     name: "Javlon Akhmedov",
     role: "Construction Technology Expert",

@@ -5,18 +5,38 @@ import { motion } from "framer-motion";
 const blocks = [
   {
     id: "01",
-    title: "Muhandislik asoslari",
-    text: "Yuklanishlar mantiqi, kesim va konstruktiv sxemalar, temir-beton va metall konstruksiyalar fikrlash darajasida tushuntiriladi.",
+    title: "Geologik xulosalar va chizmalar",
+    text: "Geologiya xulosalari, me'moriy hamda konstruktiv chizmalarni professional darajada o‘qish, fahmlash va ular bilan ishlash.",
   },
   {
     id: "02",
-    title: "Real loyihalar anatomiyasi",
-    text: "Uy, savdo markazi va jamoat binolari misolida chizmalar ustidan jonli tahlil: nima uchun aynan shu yechim tanlangan va qanday xavflar hisobga olingan.",
+    title: "Bino va inshootlar sxemalari",
+    text: "Bino va inshootlarning sxemaviy turlari va ularni qo‘llash joylari.",
   },
   {
     id: "03",
-    title: "Kasbiy yo‘l va portfolio",
-    text: "Portfolio tuzish, brif olish, buyurtmachi bilan muloqot, katta proyektlarga kirib borish strategiyasi va real bozor talablariga moslashish.",
+    title: "Temir-beton konstruksiyalar",
+    text: "Temir-beton konstruksiyalarining asosiy turlari, ish prinsipi va ularni to‘g‘ri qo‘llash tamoyillari.",
+  },
+  {
+    id: "04",
+    title: "Qurilish ashyolari va xossalari",
+    text: "Qurilish ashyolari va ularning fizikaviy xossalari, yuk ko‘tarish qobiliyati hamda material tanlash mezonlari.",
+  },
+  {
+    id: "05",
+    title: "Qurilish jarayoni texnologiyasi",
+    text: "Qurilish jarayoni texnologiyasi va uning samarali, xavfsiz hamda bosqichma-bosqich tatbiqi.",
+  },
+  {
+    id: "06",
+    title: "Muammolar va yechimlar",
+    text: "Qurilish yoki ta'mir jarayonidagi muammolarni aniqlash va ularni bartaraf etish yo‘l hamda uslublari.",
+  },
+  {
+    id: "07",
+    title: "Qurilish biznesi asoslari",
+    text: "Qurilish yoki qurilish xizmatlari biznesini tashkil qilish va uni barqaror rivojlantirishning asosiy prinsiplarini o‘rganasiz.",
   },
 ];
 
@@ -35,13 +55,18 @@ export default function Curriculum() {
       <div className="learn-inner">
         {/* Chap tomoni – sarlavha */}
         <div className="learn-header">
+          <span className="learn-badge">2 oy intensiv</span>
+
           <h2 className="learn-title">
-            Bu kursda siz nimalarni o'rganasiz?
+            Ushbu{" "}
+            <span>2 oy davom etadigan intensiv kurs</span>
+            da siz quyidagilarni o‘rganasiz:
           </h2>
+
           <p className="learn-subtitle">
-            Maqsad – formulani yodlatish emas, balki real obyektlar ortida
-            turgan muhandis tafakkurini ko‘rsatish. Har bir bo‘lim
-            nazariya+amaliyot+case tahlil bilan ketadi.
+            Geologik xulosalardan tortib, temir-beton konstruksiyalar, qurilish
+            texnologiyasi va hatto qurilish biznesi asoslarigacha bo‘lgan
+            yo‘nalishlarni bir butun tizim sifatida ko‘rib chiqamiz.
           </p>
         </div>
 

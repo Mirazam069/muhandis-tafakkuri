@@ -45,14 +45,9 @@ export default function FAQ() {
     <section className="faq">
       <div className="faq-inner">
         <div className="faq-header">
-          <p className="faq-kicker">FAQ</p>
           <h2 className="faq-title">
             Eng ko‘p beriladigan <span>savollar</span>
           </h2>
-          <p className="faq-subtitle">
-            Agar quyidagi javoblar orasida o‘zingizni qiziqtirgan savolni
-            topa olmasangiz, bizga Telegram orqali yozishingiz mumkin.
-          </p>
         </div>
 
         <div className="faq-list">

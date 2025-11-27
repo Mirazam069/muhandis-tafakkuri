@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../components/Hero.css";
 
-const WORDS = ["Tajriba", "Fikrlash", "Bilim", "Amaliyot"]; // <-- SHU YO'Q EDI
+const WORDS = ["Bilim", "Amaliyot", "Nazariya", "Tajriba", "Tafakkur"]; // <-- SHU YO'Q EDI
 
 export default function Hero() {
   const [index, setIndex] = useState(0);

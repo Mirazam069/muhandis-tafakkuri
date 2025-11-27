@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import ForWho from "./components/ForWho";
 import Architects from './components/Architects'
 import Curriculum from './components/Curriculum'
 import FAQ from './components/FAQ'
@@ -43,6 +44,7 @@ function App() {
       <div>
         <Marquee/>
         <Hero/>
+        <ForWho/>
         <Architects/>
         <Curriculum/>
         <FAQ/>
