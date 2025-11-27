@@ -5,14 +5,14 @@ import arch2 from '../assets/arch-2.JPG'
 import arch3 from '../assets/arch-3.JPG'
 
 const architects = [
-  {
-    id: 1,
-    name: "AZIZOV FARHOD",
-    role: "Lead Structural Architect",
-    exp: "20+ ish tajribasi",
-    bio: "Ko‘p qavatli turar-joy va sanoat inshootlarida yuzlab loyihalar muallifi. Amaliy konstruktiv yechimlar bo‘yicha yetakchi mutaxassis.",
-    photo: arch1,
-  },
+{
+  id: 1,
+  name: "AZIZOV FARHOD",
+  role: "Arxitektor",
+  exp: "28+ yil ish tajribasi",
+  bio: "1998-yilda Toshkent arxitektura-qurilish oliygohining Arxitektura fakultetini tamomlagan. 1999–2005-yillarda “Tashgiprogor” loyihalash institutida yetakchi arxitektor bo‘lib ishlagan. 2005-yildan “Millimetr Arch Group” arxitektura va dizayn studiyasiga asos solib, hozirgacha rahbarlik qilib keladi. 2022-yildan “iHome Build” qurilish kompaniyasini boshqaradi. Dubaydagi Jumeirah Palm hududidagi villalar, Shayx Zayd shoh ko‘chasidagi 7 qavatli mehmonxona majmuasi, Rossiya, Qozog‘iston va boshqa davlatlardagi ko‘plab jamoat hamda turar-joy binolari muallifi.",
+  photo: arch1,
+},
   {
     id: 3,
     name: "ISMOIL",
