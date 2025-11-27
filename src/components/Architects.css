@@ -111,6 +111,19 @@
   margin-top: 4px;
 }
 
+
+.arch-bio-multi {
+  margin-top: 4px;
+}
+
+.arch-bio-multi p {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0 0 4px; /* har bir ma'lumot pastdan biroz kerin bo'lsin */
+}
+
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
   .architects {

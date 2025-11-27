@@ -62,12 +62,6 @@ export default function Curriculum() {
             <span>2 oy davom etadigan intensiv kurs</span>
             da siz quyidagilarni o‘rganasiz:
           </h2>
-
-          <p className="learn-subtitle">
-            Geologik xulosalardan tortib, temir-beton konstruksiyalar, qurilish
-            texnologiyasi va hatto qurilish biznesi asoslarigacha bo‘lgan
-            yo‘nalishlarni bir butun tizim sifatida ko‘rib chiqamiz.
-          </p>
         </div>
 
         {/* O‘ng tomoni – timeline */}

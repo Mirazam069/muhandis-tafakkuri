@@ -25,7 +25,7 @@
 }
 
 .faq-title {
-  font-size: 32px;
+  font-size: 32px; /* katta title */
   line-height: 1.2;
   margin-bottom: 14px;
 }
@@ -35,7 +35,7 @@
 }
 
 .faq-subtitle {
-  font-size: 14px;
+  font-size: 17px; /* oddiy text */
   opacity: 0.8;
 }
 
@@ -53,25 +53,12 @@
   border: 1px solid rgba(255, 255, 255, 0.06);
   overflow: hidden;
   padding: 4px;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
-/* Ochiq bo'lganda chapda neon chiziq + engil glow */
-/* .faq-item.open {
-  border-color: rgba(154, 255, 79, 0.6);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
-} */
-
-/* .faq-item.open::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px;
-  bottom: 8px;
-  width: 3px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #9aff4f, #4c6fff);
-} */
+.faq-item.open {
+  border-color: rgba(59, 130, 246, 0.5);
+}
 
 /* QUESTION ROW */
 .faq-question {
@@ -81,13 +68,13 @@
   align-items: center;
   padding: 16px 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 21px; /* kichik title */
   font-weight: 500;
   background: transparent;
   border: none;
   color: inherit;
-  font-family: 'Merriweather_120pt';
   border-radius: 15px;
+  
 }
 
 .faq-question:hover {
@@ -97,6 +84,7 @@
 .faq-question-text {
   text-align: left;
   padding-right: 16px;
+  font-family: 'Merriweather_120pt';
 }
 
 .faq-icon {
@@ -104,15 +92,15 @@
   font-weight: 300;
 }
 
-/* ANSWER – scale animatsiya bilan ochiladi */
+/* ANSWER – yumshoq ochilib-yopiladi */
 .faq-answer {
-  padding: 0 20px 14px 20px;
-  margin-top: 20px;
+  padding: 0 20px 16px 20px;
+  margin-top: 6px;
 }
 
 .faq-answer p {
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 17px; /* oddiy text */
+  line-height: 1.7;
   opacity: 0.9;
 }
 
@@ -123,15 +111,15 @@
   }
 
   .faq-title {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .faq-question {
     padding: 14px 16px;
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .faq-answer {
-    padding: 0 16px 12px 16px;
+    padding: 0 16px 14px 16px;
   }
 }

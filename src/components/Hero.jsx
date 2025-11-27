@@ -18,7 +18,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          Muhandis Tafakkuri
+          'Muhandis Tafakkuri'
           <br />
           Arxitektura va qurilishdagi{" "}
           <span className="hero-dynamic-wrapper">

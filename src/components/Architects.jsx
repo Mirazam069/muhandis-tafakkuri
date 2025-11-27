@@ -5,23 +5,37 @@ import arch2 from '../assets/arch-2.JPG'
 import arch3 from '../assets/arch-3.JPG'
 
 const architects = [
-{
-  id: 1,
-  name: "AZIZOV FARHOD",
-  role: "Arxitektor",
-  exp: "28+ yil ish tajribasi",
-  bio: "1998-yilda Toshkent arxitektura-qurilish oliygohining Arxitektura fakultetini tamomlagan. 1999–2005-yillarda “Tashgiprogor” loyihalash institutida yetakchi arxitektor bo‘lib ishlagan. 2005-yildan “Millimetr Arch Group” arxitektura va dizayn studiyasiga asos solib, hozirgacha rahbarlik qilib keladi. 2022-yildan “iHome Build” qurilish kompaniyasini boshqaradi. Dubaydagi Jumeirah Palm hududidagi villalar, Shayx Zayd shoh ko‘chasidagi 7 qavatli mehmonxona majmuasi, Rossiya, Qozog‘iston va boshqa davlatlardagi ko‘plab jamoat hamda turar-joy binolari muallifi.",
-  photo: arch1,
-},
+  {
+    id: 1,
+    name: "AZIZOV FARHOD",
+    role: "Arxitektor",
+    exp: "28+ yil ish tajribasi",
+    bioLines: [
+      "1998 yil Toshkent arxitektura qurilish oligohining arxitektura fakultetini tamomlagan.",
+      "1999 yildan 2005 yilga qadar ' Tashgiprogor' loyihalash institutida yetakchi arxitektor lavozimida ishlab kelgan.",
+      "2005 yildan millimetr atch group arxitektura va dizayn studiyasini tashkil qilib hozirga davom rahbarlik qilib kelmoqda.",
+      "2022 yildan hozirga kunga qadar Ihome build qurilish kompaniyasini boshqarib keladi.",
+      "Dubayda Jumaira palm da villa loyihasi, dubayda shayx zeid shox ko'chasida 7 qavatlik mehmonhona majmuasi, rossiya, qozogiston hamda boshqa yutlarda kopgina jamoat hamda turar-joy binolari muallifi."
+    ],
+    photo: arch1,
+  },
   {
     id: 3,
     name: "ISMOIL",
     role: "Construction Technology Expert",
     exp: "10+ years experience",
-    bio: "Qurilish texnologiyalari, materiallar va obyektni noldan ekspluatatsiyaga topshirishgacha bo‘lgan jarayon bo‘yicha chuqur bilimga ega.",
+    bioLines: [
+      "1998 yil Toshkent arxitektura qurilish oligohining arxitektura fakultetini tamomlagan.",
+      "1999 yildan 2005 yilga qadar ' Tashgiprogor' loyihalash institutida yetakchi arxitektor lavozimida ishlab kelgan.",
+      "2005 yildan millimetr atch group arxitektura va dizayn studiyasini tashkil qilib hozirga davom rahbarlik qilib kelmoqda.",
+      "2022 yildan hozirga kunga qadar Ihome build qurilish kompaniyasini boshqarib keladi.",
+      "Dubayda Jumaira palm da villa loyihasi, dubayda shayx zeid shox ko'chasida 7 qavatlik mehmonhona majmuasi, rossiya, qozogiston hamda boshqa yutlarda kopgina jamoat hamda turar-joy binolari muallifi."
+    ],
     photo: arch3,
   },
 ];
+
+
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -72,7 +86,16 @@ export default function Architects() {
                 </div>
               </div>
 
-              <p className="arch-bio">{arch.bio}</p>
+              {arch.bioLines ? (
+  <div className="arch-bio-multi">
+    {arch.bioLines.map((line) => (
+      <p key={line}>{line}</p>
+    ))}
+  </div>
+) : (
+  <p className="arch-bio">{arch.bio}</p>
+)}
+
             </motion.article>
           ))}
         </div>

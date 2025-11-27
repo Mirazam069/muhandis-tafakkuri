@@ -1,4 +1,3 @@
-// src/components/FAQ.jsx
 import "./FAQ.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -35,14 +34,19 @@ const faqs = [
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
+  // Har bir savol uchun alohida open/close holat
+  const [openStates, setOpenStates] = useState(() =>
+    faqs.map(() => false)
+  );
 
-  const toggle = (i) => {
-    setOpenIndex(openIndex === i ? null : i);
+  const toggle = (index) => {
+    setOpenStates((prev) =>
+      prev.map((isOpen, i) => (i === index ? !isOpen : isOpen))
+    );
   };
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <div className="faq-inner">
         <div className="faq-header">
           <h2 className="faq-title">
@@ -52,13 +56,14 @@ export default function FAQ() {
 
         <div className="faq-list">
           {faqs.map((item, i) => {
-            const isOpen = openIndex === i;
+            const isOpen = openStates[i];
+
             return (
               <motion.div
                 key={i}
                 className={`faq-item ${isOpen ? "open" : ""}`}
-                layout
-                transition={{ layout: { duration: 0.35, ease: "easeOut" } }}
+                layout="position"
+                transition={{ layout: { duration: 0.25, ease: "easeOut" } }}
               >
                 <button
                   className="faq-question"
@@ -70,7 +75,7 @@ export default function FAQ() {
                   <motion.span
                     className="faq-icon"
                     animate={{ rotate: isOpen ? 45 : 0 }}
-                    transition={{ duration: 0.25 }}
+                    transition={{ duration: 0.2 }}
                   >
                     +
                   </motion.span>
@@ -80,12 +85,11 @@ export default function FAQ() {
                   {isOpen && (
                     <motion.div
                       className="faq-answer"
-                      key="content"
-                      initial={{ opacity: 0, scaleY: 0.85 }}
-                      animate={{ opacity: 1, scaleY: 1 }}
-                      exit={{ opacity: 0, scaleY: 0.9 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                      style={{ transformOrigin: "top" }}
+                      key={`content-${i}`}
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -6 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
                     >
                       <p>{item.a}</p>
                     </motion.div>
