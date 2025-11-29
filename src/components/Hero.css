@@ -24,7 +24,8 @@
   font-size: clamp(32px, 7vw, 74px);
   line-height: 1.12;
   font-weight: 700;
-  max-width: 900px;
+  max-width: 1000px;
+  letter-spacing: -2px;
 }
 
 .hero-dynamic-wrapper {
