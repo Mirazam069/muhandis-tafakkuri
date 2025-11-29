@@ -5,31 +5,27 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     q: "Kurs online emasmi?",
-    a: "Yo‘q. Kurs to‘liq offline formatda o‘tiladi. Darslar auditoriyada, real chizmalar va obyektlar ustida olib boriladi. Ba’zi mashg‘ulotlarda joyning o‘ziga chiqib, konstruktsiyalarni jonli ko‘rib tahlil qilamiz.",
+    a: "Ushbu taqdim etilayotgan kurs offlayn formatida bo'lib o'tadi.",
   },
   {
-    q: "Kurs qancha davom etadi?",
-    a: "O‘rtacha 2–3 oy davom etadi. Haftasiga bir necha marotaba dars bo‘ladi va har bir modul muayyan maqsadga yo‘naltirilgan. Oxirida o‘zingiz mustaqil bajargan loyiha orqali bilimlaringizni mustahkamlaysiz.",
-  },
-  {
-    q: "Arxitektura bo‘yicha tajribam bo‘lmasa ham qatnashsam bo‘ladimi?",
-    a: "Ha, qatnashsa bo‘ladi. Kurs bosqichma-bosqich tushuntiriladi, boshlang‘ich tushunchalardan murakkab konstruktiv qarorlargacha boramiz. Eng muhimi, sizda o‘rganishga qiziqish bo‘lsa kifoya.",
+    q: "Kurs qancha vaqt davom etadi?",
+    a: "Ushbu taqdim etilayotgan kurs haftasiga 3 marotaba 2 oy davom etadi.",
   },
   {
     q: "Darslar qayerda va qaysi vaqtda bo‘ladi?",
-    a: "Darslar Toshkentdagi markazimizda o‘tiladi. Aniq manzil va jadval ro‘yxatdan o‘tayotganingizda yuboriladi. Guruhlar kechki va dam olish kunlariga moslab ham shakllantiriladi.",
+    a: "Darslar Toshkent shahri markazida bo'lib o'tadi, guruh to'planishi bilan aniq vaqt va manzili o'quvchilarga havardor qilinadi.",
   },
   {
-    q: "Kurs tugaganda sertifikat beriladimi?",
-    a: "Ha, kurs yakunida ishtirokingiz va bajargan loyihangiz asosida sertifikat beriladi. Uni portfoliongizga qo‘shishingiz va kelajakdagi ish suhbatlarida ko‘rsatishingiz mumkin.",
+    q: "Kurs to‘lovini bo‘lib to‘lash mumkinmi?",
+    a: "Ha albatta, kurs to'lovlarni 3 qismga bo'lib tolash imkoniyati mavjud.",
   },
   {
-    q: "Kurs narxi qancha va to‘lovni bo‘lib to‘lash mumkinmi?",
-    a: "Narx modul va oqimga qarab biroz farq qilishi mumkin, lekin oyma-oy bo‘lib to‘lash imkoni mavjud. Batafsil narx va to‘lov rejalarini ro‘yxatdan o‘tish formasi orqali aniqlab olasiz.",
+    q: "Joylar soni cheklanganmi?",
+    a: "Joylar soni cheklangan, guruh 30 kishidan iborat bo'ladi.",
   },
   {
-    q: "Joylar cheklanganmi?",
-    a: "Ha, har bir oqimga atigi 25–30 nafar o‘quvchi qabul qilinadi. Bu har bir ishtirokchiga individual e’tibor qaratish va darslarda savol-javob uchun yetarli vaqt ajratish imkonini beradi.",
+    q: "Kursda kimlar dars beradi?",
+    a: "Kursda Toshkent Arxitektura-qurilish Universitetining, Arxitektura qurilish muhandisligi, sanoat va fuqarolik qurilishi muhandisligi fakultetlarining ustozlari dars beradilar.",
   },
 ];
 
