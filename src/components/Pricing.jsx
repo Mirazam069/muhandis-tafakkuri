@@ -36,7 +36,7 @@ export default function Pricing() {
 
             <div className="pricing-amount-wrap">
               <span className="pricing-currency">$</span>
-              <span className="pricing-amount">3500</span>
+              <span className="pricing-amount">1000</span>
             </div>
 
             <p className="pricing-note">

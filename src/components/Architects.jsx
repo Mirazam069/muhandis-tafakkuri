@@ -5,25 +5,25 @@ import arch2 from '../assets/arch-2.JPG'
 import arch3 from '../assets/arch-3.JPG'
 
 const architects = [
-  {
-    id: 1,
-    name: "AZIZOV FARHOD",
-    role: "Arxitektor",
-    exp: "28+ yil ish tajribasi",
-    bioLines: [
-      "1998 yil Toshkent arxitektura qurilish oligohining arxitektura fakultetini tamomlagan.",
-      "1999 yildan 2005 yilga qadar ' Tashgiprogor' loyihalash institutida yetakchi arxitektor lavozimida ishlab kelgan.",
-      "2005 yildan millimetr atch group arxitektura va dizayn studiyasini tashkil qilib hozirga davom rahbarlik qilib kelmoqda.",
-      "2022 yildan hozirga kunga qadar Ihome build qurilish kompaniyasini boshqarib keladi.",
-      "Dubayda Jumaira palm da villa loyihasi, dubayda shayx zeid shox ko'chasida 7 qavatlik mehmonhona majmuasi, rossiya, qozogiston hamda boshqa yutlarda kopgina jamoat hamda turar-joy binolari muallifi."
-    ],
-    photo: arch1,
-  },
+{
+  id: 1,
+  name: "AZIZOV FARHOD",
+  role: "Arxitektor",
+  exp: "28+ yil ish tajribasi",
+  bioLines: [
+    "1998-yilda Toshkent arxitektura-qurilish oliygohining arxitektura fakultetini tamomlagan.",
+    "1999-yildan 2005-yilgacha Tashgiprogor loyihalash institutida yetakchi arxitektor lavozimida faoliyat yuritgan.",
+    "2005-yildan 'Millimeter ATCH Group' arxitektura va dizayn studiyasini tashkil etib, hozirgacha rahbarlik qilib kelmoqda.",
+    "2022-yildan buyon 'Ihome Build' qurilish kompaniyasini boshqarib keladi.",
+    "Dubaydagi Jumeirah Palm-da villa loyihasi, Shayx Zayd Shox ko'chasida joylashgan 7 qavatli mehmonxona majmuasi, Rossiya va Qozog'istondagi ko'plab jamoat hamda turar-joy binolari muallifi."
+  ],
+  photo: arch1,
+},
   {
     id: 3,
-    name: "ISMOIL",
-    role: "Construction Technology Expert",
-    exp: "10+ years experience",
+    name: "ORIFJONOV ISMOIL",
+    role: "Muhandis",
+    exp: "10+ yil ish tajribasi",
     bioLines: [
       "1998 yil Toshkent arxitektura qurilish oligohining arxitektura fakultetini tamomlagan.",
       "1999 yildan 2005 yilga qadar ' Tashgiprogor' loyihalash institutida yetakchi arxitektor lavozimida ishlab kelgan.",
@@ -52,11 +52,11 @@ export default function Architects() {
       <div className="architects-inner">
         <div className="architects-header">
           <h2 className="architects-title">
-            3 arxitektorning umumiy bilimlari
+            Arxitektorlar va muhandislar haqida ma'lumot
           </h2>
           <p className="architects-subtitle">
-            Kursda siz nazariya emas, balki yillar davomida sinovdan o‘tgan real
-            obyektlar va amaliy qarorlar ortida turgan fikrlash uslubini o‘rganasiz.
+            Kursimizda siz nafaqat nazariya, balki ko‘p yillik tajribamiz davomida orttirilgan 
+            bilim va ko‘nikmalarni o‘rganish orqali muhandis kabi fikrlash hamda qaror qabul qilish uslublarini egallaysiz.
           </p>
         </div>
 
