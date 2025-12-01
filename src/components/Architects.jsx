@@ -20,7 +20,7 @@ const architects = [
 },
 {
   id: 3,
-  name: "ORIFJONOV ISMOIL LUTFULLOH O‘G‘LI",
+  name: "ORIFJONOV ISMOIL",
   role: "Qurilish konstruktori, GIP",
   exp: "10+ yil ish tajribasi",
   bioLines: [
