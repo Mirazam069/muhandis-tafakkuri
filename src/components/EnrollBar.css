@@ -18,7 +18,7 @@ body{
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-
+  
   backdrop-filter: blur(20px);
   border-radius: 16px;
 
@@ -26,6 +26,7 @@ body{
   /* box-shadow kerak emas deding, shuning uchun yo'q */
 
   padding: 10px 16px;
+  
 }
 
 /* Ichkaridagi tugma (to'liq boxni bosiladigan qilamiz) */
@@ -56,6 +57,7 @@ body{
   padding: 10px 21px;
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
+  background-color: #3b82f6;
 }
 
 /* Telegram icon */
