@@ -77,11 +77,11 @@ export default function EnrollBar() {
 
             <div className="enroll-modal-phone">
               <span>Yoki qo‘ng‘iroq qiling:</span>
-              <a href="tel:+998901234567" className="enroll-modal-phone-link">
-                +998 90 123 45 67
+              <a href="tel:+998887001001" className="enroll-modal-phone-link">
+                +998 88 700 10 01
               </a>
-              <a href="tel:+998901234567" className="enroll-modal-phone-link">
-                +998 90 123 45 67
+              <a href="tel:+998974487666" className="enroll-modal-phone-link">
+                +998 97 448 76 66
               </a>
             </div>
           </div>
