@@ -6,22 +6,22 @@ const people = [
   {
     tag: "Talabalar",
     title: "Arxitektura yo‘nalishida o‘qiyotganlar",
-    text: "Universitetda o‘qiyotgan, lekin konstruktiv fikrlashni real obyektlar misolida ko‘rishni istaydigan talabalar.",
+    text: "Universitetda o‘qiyotgan, ammo Universitet bilimlariga qo'shimcha ravishda real bilim va tajriba olmoqchi bo'lganlar uchun.",
   },
   {
     tag: "Junior mutaxassislar",
     title: "Arxitektor va interyer dizaynerlar",
-    text: "AutoCAD, Revit yoki 3ds Max bilan ishlaydigan, lekin yuklanishlar va konstruksiyalar mantiqini chuqurlashtirmoqchi bo‘lganlar.",
+    text: "AutoCAD, Revit yoki 3ds Max dasturlarida ishlaydigan ammo loyihalash asoslaridan hamda bino konstruksiyalaridan muayyan bilimi bo'lmaganlar uchun.",
   },
   {
     tag: "Karyera izlayotganlar",
-    title: "Studiya yoki freelancer bo‘lishni xohlaganlar",
-    text: "Portfolio yig‘ib, yirik studiyalar yoki chet el mijozlari bilan ishlashni maqsad qilgan yosh mutaxassislar.",
+    title: "Qurilish jarayonida texnik ilmiy bazasi bo'lmaganlar",
+    text: "Qurilish jarayonlarida faoliyat yuritayotganlar, ammo ushbu faoliyatga zarur bo'lgan texnik kollej yoki oliygohni bitirmaganlar uchun.",
   },
   {
     tag: "Qurilish sohasi",
-    title: "Qurilish kompaniyalarida ishlamoqchilar",
-    text: "Loyiha, smeta, texnik nazorat yoki qurilish menejmenti yo‘nalishida mustahkam asosga ega bo‘lishni istaganlar.",
+    title: "Qurilish kompaniyalarida ishlamoqchi bo'lganlar",
+    text: "Qurilish - ishchi chizmalari (Geologiya, AR, KR)dagi jadvallar, spetsifikatsiyalar, markirovkalarni o'qib fahmlay olmaydiganlar uchun.",
   },
 ];
 
@@ -43,8 +43,8 @@ export default function ForWho() {
           <span className="forwho-badge">Kurs kimlar uchun?</span>
 
           <h2 className="forwho-title">
-            “Muhandis tafakkuri” kursi{" "}
-            <span>qurilishga jiddiy qaraydiganlar</span> uchun yaratilgan.
+            “Muhandis tafakkuri” kursi -{" "}
+            <span>Arxitektura - qurilish</span> sohalarida o'z tajriba va malakasini oshirmoqchi bo'lganlar uchun eng zo'r taklifdir.
           </h2>
         </div>
 

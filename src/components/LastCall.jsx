@@ -22,7 +22,7 @@ export default function LastCall() {
             <div>
               <p className="lc-fact-label">Yopiq format</p>
               <p className="lc-fact-text">
-                Guruh atigi <strong>25 nafar</strong> ishtirokchidan iborat.
+                Guruh atigi <strong>30 nafar</strong> ishtirokchidan iborat.
               </p>
             </div>
           </div>

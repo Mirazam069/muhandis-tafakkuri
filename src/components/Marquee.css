@@ -4,6 +4,7 @@
   padding: 12px 0;
   overflow: hidden;
   margin-top: 30px;
+  z-index: 1;
 }
 
 .marquee-inner {

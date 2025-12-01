@@ -2,6 +2,7 @@
   position: relative;
   padding: 80px 40px 90px;
   color: #ffffff;
+  z-index: 999;
 }
 
 

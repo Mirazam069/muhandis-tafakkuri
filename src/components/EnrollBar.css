@@ -7,6 +7,7 @@
   z-index: 9999;
   padding: 0 16px; /* ichkariga ozgina bo'sh joy */
   pointer-events: none; /* faqat ichki box klik bo'lsin */
+  z-index: 999;
 }
 body{
     font-family: 'Merriweather_120pt';
@@ -85,5 +86,127 @@ body{
   .enroll-logo {
     width: 90px;
     height: 60px;
+  }
+}
+
+
+/* ========================= */
+/*   To'liq ekran modal      */
+/* ========================= */
+
+.enroll-modal-backdrop {
+  position: fixed;
+  inset: 0;
+
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000; /* enroll-full dan yuqori */
+}
+
+.enroll-modal {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 420px;
+  padding: 24px 22px 20px;
+  border-radius: 18px;
+
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6);
+}
+
+.enroll-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.enroll-modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.enroll-modal-telegram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+
+  border-radius: 999px;
+  border: none;
+  text-decoration: none;
+
+  background: #2aabee; /* Telegram rangiga yaqin */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.enroll-modal-telegram:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(42, 171, 238, 0.45);
+  background: #249cd7;
+}
+
+.enroll-modal-telegram-icon {
+  font-size: 20px;
+}
+
+.enroll-modal-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.enroll-modal-phone-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.enroll-modal-phone-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobil uchun biroz moslash */
+@media (max-width: 480px) {
+  .enroll-modal {
+    width: calc(100% - 24px);
+    padding: 20px 18px 18px;
+    border-radius: 16px;
+  }
+
+  .enroll-modal-title {
+    font-size: 18px;
+  }
+
+  .enroll-modal-telegram {
+    font-size: 15px;
+  }
+
+  .enroll-modal-phone-link {
+    font-size: 16px;
   }
 }

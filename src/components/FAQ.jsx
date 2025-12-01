@@ -9,23 +9,23 @@ const faqs = [
   },
   {
     q: "Kurs qancha vaqt davom etadi?",
-    a: "Ushbu taqdim etilayotgan kurs haftasiga 3 marotaba 2 oy davom etadi.",
+    a: "Ushbu taqdim etilayotgan kurs haftasiga 3 marotaba 2 oy davomida olib boriladi.",
   },
   {
     q: "Darslar qayerda va qaysi vaqtda bo‘ladi?",
-    a: "Darslar Toshkent shahri markazida bo'lib o'tadi, guruh to'planishi bilan aniq vaqt va manzili o'quvchilarga havardor qilinadi.",
+    a: "Darslar Toshkent shahri markazida bo'lib o'tadi, guruh to'planishi bilan aniq vaqt va manzili o'quvchilarga e'lon qilinadi.",
   },
   {
     q: "Kurs to‘lovini bo‘lib to‘lash mumkinmi?",
-    a: "Ha albatta, kurs to'lovlarni 3 qismga bo'lib tolash imkoniyati mavjud.",
+    a: "Ha albatta, kurs to'lovlarni 3 qismga bo'lib to'lash imkoniyati mavjud.",
   },
   {
-    q: "Joylar soni cheklanganmi?",
-    a: "Joylar soni cheklangan, guruh 30 kishidan iborat bo'ladi.",
+    q: "Dars oluvchilar guruhi necha kishidan iborat bo'ladi?",
+    a: "Guruh 30 kishidan iborat bo'ladi.",
   },
   {
     q: "Kursda kimlar dars beradi?",
-    a: "Kursda Toshkent Arxitektura-qurilish Universitetining, Arxitektura qurilish muhandisligi, sanoat va fuqarolik qurilishi muhandisligi fakultetlarining ustozlari dars beradilar.",
+    a: "Kursda Toshkent Arxitektura-qurilish Universitetining, arxitektura, hamda qurilish muhandisligi, sanoat va fuqarolik qurilishi muhandisligi fakultetlarining ustozlari va bevosita loyihalashtirish shuningdek real qurilish jarayonlari faoliyatida 30 yillik tajribaga ega bo'lgan ustozlar dars beradilar.",
   },
 ];
 
