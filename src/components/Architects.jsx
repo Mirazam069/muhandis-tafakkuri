@@ -1,7 +1,6 @@
 import "./Architects.css";
 import { motion } from "framer-motion";
 import arch1 from '../assets/arch-1.JPG'
-import arch2 from '../assets/arch-2.JPG'
 import arch3 from '../assets/arch-3.JPG'
 
 const architects = [
@@ -19,20 +18,18 @@ const architects = [
   ],
   photo: arch1,
 },
-  {
-    id: 3,
-    name: "ORIFJONOV ISMOIL",
-    role: "Muhandis",
-    exp: "10+ yil ish tajribasi",
-    bioLines: [
-      "1998 yil Toshkent arxitektura qurilish oligohining arxitektura fakultetini tamomlagan.",
-      "1999 yildan 2005 yilga qadar ' Tashgiprogor' loyihalash institutida yetakchi arxitektor lavozimida ishlab kelgan.",
-      "2005 yildan millimetr atch group arxitektura va dizayn studiyasini tashkil qilib hozirga davom rahbarlik qilib kelmoqda.",
-      "2022 yildan hozirga kunga qadar Ihome build qurilish kompaniyasini boshqarib keladi.",
-      "Dubayda Jumaira palm da villa loyihasi, dubayda shayx zeid shox ko'chasida 7 qavatlik mehmonhona majmuasi, rossiya, qozogiston hamda boshqa yutlarda kopgina jamoat hamda turar-joy binolari muallifi."
-    ],
-    photo: arch3,
-  },
+{
+  id: 3,
+  name: "ORIFJONOV ISMOIL LUTFULLOH O‘G‘LI",
+  role: "Qurilish konstruktori, GIP",
+  exp: "10+ yil ish tajribasi",
+  bioLines: [
+    "9–16 qavatli turar-joy va ofis binolari, sanoat inshootlari va zilzilabardosh konstruksiyalarni loyihalash hamda ularni texnik ko‘rikdan o‘tkazish bo‘yicha 10+ yillik tajribaga ega.",
+    "Loyihalash jarayonida Eurocode, SNIP va SP talablari asosida temir-beton va po‘lat konstruksiyalar bilan ishlaydi, LIRA-SAPR, Revit/BIM va AutoCAD dasturlarida modellashtirish va hisob-kitoblar bajaradi.",
+    "Mehnat faoliyati davomida “Toshkent Expertiza loyiha”, “UZ Shaharsozlik LITI”, “Memorial architectural project”, “Nano Project” va “MAG” kompaniyalarida konstruktor hamda bosh muhandis-konstruktor (GIP) sifatida ishlagan; Benkov nomidagi rassomlik kollejini va Toshkent Arxitektura-Qurilish institutining qurilish muhandisligi yo‘nalishini tamomlagan."
+  ],
+  photo: arch3,
+},
 ];
 
 

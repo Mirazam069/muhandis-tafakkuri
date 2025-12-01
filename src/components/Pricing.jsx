@@ -35,9 +35,14 @@ export default function Pricing() {
             <p className="pricing-label">Kursning to‘liq narxi</p>
 
             <div className="pricing-amount-wrap">
-              <span className="pricing-currency">$</span>
-              <span className="pricing-amount">1000</span>
+              <span className="pricing-amount">Kurs narxini bilish uchun</span>
             </div>
+            <a
+              href="https://t.me/username" // bu yerga o‘zingizning Telegram linkni qo‘ying
+              className="pricing-cta"
+            >
+              Kursga yozilish
+            </a>
 
             <p className="pricing-note">
               2 oy intensiv dastur, barcha darslar, materiallar va
@@ -62,12 +67,7 @@ export default function Pricing() {
               ro‘yxatdan o‘tish uchun pastdagi tugma orqali bog‘laning.
             </p>
 
-            <a
-              href="https://t.me/username" // bu yerga o‘zingizning Telegram linkni qo‘ying
-              className="pricing-cta"
-            >
-              Kursga yozilish
-            </a>
+            
           </div>
         </motion.div>
       </div>

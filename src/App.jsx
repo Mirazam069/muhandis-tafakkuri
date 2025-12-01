@@ -17,7 +17,7 @@ function App() {
   return (
 
     <div>
-       <FloatingLines
+       {/* <FloatingLines
   enabledWaves={["top", "middle", "bottom"]}
   lineCount={[10, 15, 20]}
   lineDistance={[8, 6, 4]}
@@ -39,7 +39,7 @@ function App() {
 
   mixBlendMode="screen"
   // style={{ opacity: 0.8 }}   // biroz shaffof, lekin yorqin
-/>
+/> */}
 
 
 

@@ -98,7 +98,7 @@ body{
   position: fixed;
   inset: 0;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +175,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 17px;
+  font-size:21px;
   opacity: 0.9;
 }
 

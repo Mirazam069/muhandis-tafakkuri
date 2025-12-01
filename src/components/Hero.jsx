@@ -12,6 +12,7 @@ export default function Hero() {
   const videoRef = useRef(null);
 
 
+
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % WORDS.length);
