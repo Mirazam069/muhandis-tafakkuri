@@ -1,8 +1,6 @@
 .hero {
   position: relative;
-  /* 1) Avval oddiy fallback */
   min-height: 100vh;
-  /* 2) Mobil uchun sakramaydigan birlik */
   min-height: 100svh;
 
   padding: 0px 40px 60px;
@@ -65,7 +63,6 @@
   }
 }
 
-
 .hero-video {
   position: fixed;
   top: 0;
@@ -79,11 +76,10 @@
 .hero-overlay {
   position: fixed;
   inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.6)
+  );
   z-index: -100;
 }
-
-
-

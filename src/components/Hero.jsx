@@ -1,18 +1,17 @@
-import { useState, useEffect, useRef } from "react";
+// src/components/Hero.jsx
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../components/Hero.css";
-import bgVideo from "../assets/architecture-bg.mp4";
+import bgVideoDesktop from "../assets/architecture-bg.mp4";
+import bgVideoMobile from "../assets/arch-bg2.mp4"; // 🔥 2-video
 
-const WORDS = ["Bilim", "Amaliyot", "Nazariya", "Tajriba", "Tafakkur"]; // <-- SHU YO'Q EDI
+const WORDS = ["Bilim", "Amaliyot", "Nazariya", "Tajriba", "Tafakkur"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
-
-  const videoRef = useRef(null);
-
-
-
+  // So'zlarni almashtirish
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % WORDS.length);
@@ -20,22 +19,43 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
+  // Ekran kengligini kuzatish
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mq = window.matchMedia("(max-width: 768px)");
+
+    const handleChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    // Dastlab bir marta ishlatamiz
+    handleChange(mq);
+
+    // Keyin o'zgarishlarni kuzatamiz
+    mq.addEventListener("change", handleChange);
+    return () => mq.removeEventListener("change", handleChange);
+  }, []);
+
+  const videoSrc = isMobile ? bgVideoMobile : bgVideoDesktop;
+
   return (
     <section className="hero">
       <video
-      ref={videoRef}
-      className="hero-video"
-      autoPlay
-      muted
-      loop
-      playsInline
-    >
-      <source src={bgVideo} type="video/mp4" />
-      Sizning brauzeringiz video tag'ni qo'llab-quvvatlamaydi.
-    </video>
+        key={videoSrc}           // src o'zgarganda video qayta mount bo'ladi
+        className="hero-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        src={videoSrc}           // 🔥 src to'g'ridan-to'g'ri shu yerda
+      >
+        Sizning brauzeringiz video tag'ni qo'llab-quvvatlamaydi.
+      </video>
 
-    {/* Qoraytiruvchi overlay */}
-    <div className="hero-overlay" />
+      {/* Qoraytiruvchi overlay */}
+      <div className="hero-overlay" />
+
       <div className="hero-content">
         <h1 className="hero-title">
           'Muhandis Tafakkuri'
