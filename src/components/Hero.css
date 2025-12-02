@@ -87,3 +87,19 @@
 
 
 
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+    min-height: auto;           /* 100vh emas – oddiy balandlik */
+    padding: 80px 20px 40px;    /* tepasi yetarli bo‘lsin */
+    margin-top: 0;
+    background: #000000;        /* orqa fon – qora, video o‘rniga */
+    z-index: 0;                 /* boshqa bo‘limlar bilan urishmasin */
+  }
+
+  /* Telefonda videoni umuman o‘chirib turamiz */
+  .hero-video,
+  .hero-overlay {
+    display: none;
+  }
+}
