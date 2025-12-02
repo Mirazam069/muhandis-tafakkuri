@@ -84,3 +84,30 @@
       rgba(0, 0, 0, 0.6));
   z-index: -100;
 }
+
+/* Mobil scrollni tekis qilish uchun */
+@media (max-width: 768px) {
+  .hero-video {
+    position: absolute;  /* fixed EMAS */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;  /* fixed EMAS */
+    inset: 0;
+  }
+
+  .hero {
+    margin-top: 0;               /* allaqachon bor bo‘lsa ham – mobilga tekis */
+    padding: 80px 20px 40px;     /* o‘zing xohlagancha sozlashing mumkin */
+  }
+
+  html,
+  body {
+    overflow-x: hidden;          /* yon tomonga silkishmasin */
+  }
+}
