@@ -87,24 +87,3 @@
 
 
 
-@media (max-width: 768px) {
-  .hero {
-    min-height: auto;        /* 100vh dan voz kechamiz */
-    padding: 80px 20px 40px; /* oddiy kontent bo'limi bo'lsin */
-    margin-top: 0;
-  }
-
-  .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-  }
-}
