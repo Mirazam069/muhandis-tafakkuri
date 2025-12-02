@@ -12,7 +12,7 @@ const architects = [
   bioLines: [
     "1998-yilda Toshkent arxitektura-qurilish oliygohining arxitektura fakultetini tamomlagan.",
     "1999-yildan 2005-yilgacha Tashgiprogor loyihalash institutida yetakchi arxitektor lavozimida faoliyat yuritgan.",
-    "2005-yildan 'Millimeter ATCH Group' arxitektura va dizayn studiyasini tashkil etib, hozirgacha rahbarlik qilib kelmoqda.",
+    "2005-yildan 'Millimeter ARCH Group' arxitektura va dizayn studiyasini tashkil etib, hozirgacha rahbarlik qilib kelmoqda.",
     "2022-yildan buyon 'Ihome Build' qurilish kompaniyasini boshqarib keladi.",
     "Dubaydagi Jumeirah Palm-da villa loyihasi, Shayx Zayd Shox ko'chasida joylashgan 7 qavatli mehmonxona majmuasi, Rossiya va Qozog'istondagi ko'plab jamoat hamda turar-joy binolari muallifi."
   ],
