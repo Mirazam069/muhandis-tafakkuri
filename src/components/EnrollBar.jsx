@@ -66,7 +66,7 @@ export default function EnrollBar() {
             <h3 className="enroll-modal-title">Biz bilan bog‘laning</h3>
 
             <a
-              href="https://t.me/username"
+              href="https://t.me/jafarxonn"
               target="_blank"
               rel="noopener noreferrer"
               className="enroll-modal-telegram"
