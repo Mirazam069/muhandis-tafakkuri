@@ -3,12 +3,22 @@ import "./EnrollBar.css";
 import { motion } from "framer-motion";
 import { FaTelegramPlane } from "react-icons/fa";
 import { useState } from "react";
-import logo from "../assets/logo.png"; // <-- LOGO IMPORT
+import logo from "../assets/logo.png";
 
 export default function EnrollBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenModal = () => {
+    // 🔹 GA4 EVENT: "Kursga yozilish" tugmasi bosildi
+    if (window.gtag) {
+      window.gtag("event", "enroll_bar_click", {
+        event_category: "engagement",
+        event_label: "Kursga yozilish (bottom bar)",
+      });
+    } else {
+      console.log("gtag yo'q, event yuborilmadi");
+    }
+
     setIsOpen(true);
   };
 
@@ -37,7 +47,7 @@ export default function EnrollBar() {
           <button
             className="enroll-full-btn"
             type="button"
-            onClick={handleOpenModal}
+            onClick={handleOpenModal}   // 👈 shu joydan event ketadi
           >
             <img src={logo} alt="Logo" className="enroll-logo" />
             <div className="enrollAllDiv">
@@ -48,12 +58,11 @@ export default function EnrollBar() {
         </motion.div>
       </motion.div>
 
-      {/* 🔹 To'liq ekran shaffof modal */}
       {isOpen && (
         <div className="enroll-modal-backdrop" onClick={handleCloseModal}>
           <div
             className="enroll-modal"
-            onClick={(e) => e.stopPropagation()} // ichkariga bosganda yopilib ketmasin
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
